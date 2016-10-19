@@ -19,6 +19,10 @@ Om hytter, gi informasjon om:
 
 ## Produktdokumentasjon
 ### Funksjonelle krav
-* seuihfuisehfuisehfuihseuif 
+* 
 
 ### Ikke-funksjonelle krav
+* Lav resposntid
+* Stabil
+* HTML5 kompatible nettlesere, telefonformat
+* Farger må stemme med Bergen og Hordaland Turlag sine
