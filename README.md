@@ -10,6 +10,7 @@ Om turer, gi informasjon om:
 * beregnet gangtid
 * høydeforskjell
 * valgt  tur må komme fram i et kart
+
 Om hytter, gi informasjon om:
 * betjening (ubetjent, betjent, selvbetjent)
 * antall sengeplasser
