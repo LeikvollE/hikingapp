@@ -1,5 +1,5 @@
-# hikingapp
-HikingApp er en app fo folk som skal planlegge turer i Bergen og Hordaland.
+# HikingApp
+HikingApp er en app/webtjeneste for folk som skal planlegge turer i Bergen og Hordaland.
 
 ## Installasjon
 
