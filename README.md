@@ -18,6 +18,6 @@ Om hytter, gi informasjon om:
 * bilde av hyttene, beskrivelse av området rundt
 
 ## Produktdokumentasjon
-### Funksjonelle krav
+### Funksjonelle krav 
 * seuihfuisehfuisehfuihseuif
 ### Ikke-funksjonelle krav
