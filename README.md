@@ -16,3 +16,8 @@ Om hytter, gi informasjon om:
 * antall sengeplasser
 * fasiliteter
 * bilde av hyttene, beskrivelse av området rundt
+
+## Produktdokumentasjon
+### Funksjonelle krav
+* seuihfuisehfuisehfuihseuif
+### Ikke-funksjonelle krav
