@@ -1,4 +1,10 @@
 # hikingapp
+HikingApp er en app fo folk som skal planlegge turer i Bergen og Hordaland.
+
+## Brukerveiledning
+
+## Instalasjon
+
 ## GAS-analyse
 ### Goal
 Kunne planlegge turer i fjellområdene rundt Turlagets hytter.
