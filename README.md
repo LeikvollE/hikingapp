@@ -19,6 +19,8 @@ Om hytter, gi informasjon om:
 
 ## Produktdokumentasjon
 ### Funksjonelle krav
+* kunne planlegge turer til, fra og mellom Turistforeningens hytter i Hordaland
+* kunne få kvantitativ og kvalitativ informasjon om turene og hyttene
 * 
 
 ### Ikke-funksjonelle krav
