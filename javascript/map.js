@@ -9,7 +9,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
     maxZoom: 18,
     id: 'your.mapbox.project.id',
     accessToken: 'your.mapbox.public.access.token'
-}).addTo(mymap);
+}).addTo(map);
 
 L.tileLayer('http://mt3.turistforeningen.no/prod/trail_summer/{z}/{x}/{y}.png', {
     attribution: '<a href="https://www.dnt.no/">DNT</a>'
