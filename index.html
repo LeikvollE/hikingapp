@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
     <link rel="stylesheet" href="javascript/leaflet-routing-machine.css" />
@@ -9,6 +10,7 @@
     <title>Document</title>
 </head>
 <body>
+  <div id="container" class="">
     <section id="selectionSection">
       <select class="" name="" id="areaSelect">
         <option value="null">Velg område</option>
@@ -30,7 +32,7 @@
       </div>
     </section>
 
-    <section id="mapSection">
+    <section id="mapSection" class="w3-content">
       <div id="map" style="height: 400px; width: 600px"></div>
 
       <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
@@ -45,7 +47,7 @@
     <section id="infoSection">
       info om hytter og rute
     </section>
-
+</div>
 
 </body>
 </html>
