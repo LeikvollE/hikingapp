@@ -18,3 +18,15 @@ body{
   margin: 0 auto;
   width: 66.66%;
 }
+#areaSelect{
+  -webkit-appearance: none;
+}
+.hytter{
+  background-color: #d82d20;
+  color: white;
+  text-align: center;
+  padding: 5px 0 5px 0;
+}
+.hytter:hover{
+  background-color: #a80c1c;
+}
