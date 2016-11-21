@@ -6,12 +6,13 @@
 //objekter må inneholde: koordinater, sted (bergsdalen), bilde av hytte, beskrivelse av hyttefasiliteter og området rundt.
 //datastruktur på liste over hytter: hytteliste[hytte[egenskaper]]. elementene til hytte er [sted, location, bilde, beskrivelse]
 
-//må gjøre om alle objekter til array
-
-var hogabu = [L.latLng(60.535, 5.924722), "bergsdalen", "img/hogabu.jpg", "beskrivelse av hogabu"];
-var alexgrieg = [L.latLng(60.536944, 6.079167), "bergsdalen", "img/alexgrieg.jpg", "beskrivelse av alexgrieg"];
-var gullhorgabu = [L.latLng(60.500833, 5.960278), "bergsdalen", "img/gullhorgabu.jpg", "beskrivelse av gullhorgabu"];
-var vending = [L.latLng(60.473889, 6.075278), "bergsdalen", "img/vending.jpg", "beskrivelse av vending"];
+var hytter = [
+  ["L.latLng(60.535, 5.924722)", "bergsdalen", "høgabu", "img/hogabu.jpg", "beskrivelse av hogabu"],
+  ["L.latLng(60.536944, 6.079167)", "bergsdalen", "alexander grieg", "img/alexgrieg.jpg", "beskrivelse av alexgrieg"],
+  ["L.latLng(60.500833, 5.960278)", "bergsdalen", "gullhorgabu", "img/gullhorgabu.jpg", "beskrivelse av gullhorgabu"],
+  ["L.latLng(60.473889, 6.075278)", "bergsdalen", "vending", "img/vending.jpg", "beskrivelse av vending"],
+  ["L.latLng(60.473889, 6.075278)", "dal", "vending", "img/vending.jpg", "beskrivelse av vending"]
+]; //bruker annet sted enn bergsdalen på siste element
 
 /*var hogabu = {
     location: L.latLng(60.535, 5.924722),
