@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--stylesheets-->
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
@@ -13,12 +14,13 @@
   <div id="container" class="">
     <section id="selectionSection">
 
-      <select class="" name="" id="areaSelect">
+      <select class="" name="" id="areaSelect" onChange="">
         <option value="null">Velg område</option>
         <option value="bergsdalen">Bergsdalen</option>
       </select>
 
       <div id="hytter">
+        <!--midlertidige elementer. ferdig liste skal være generert av javascript-->
         <div class="hytter">
           hytte1
         </div>
@@ -47,8 +49,23 @@
     </section>
 
     <section id="infoSection">
-      info om hytter og rute
+      <table>
+        <tbody>
+          <tr>
+            <td id="info_hytte1">
+              info om hytte 1
+            </td>
+            <td id="info_rute">
+              info om rute
+            </td>
+            <td id="info_hytte2">
+              info om hytte 2
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   </div>
+  <script type="text/javascript" src="javascript/hyttevelger.js"></script>
 </body>
 </html>
