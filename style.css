@@ -43,3 +43,28 @@ body{
 .hytter:hover{
   background-color: #a80c1c;
 }
+
+#infoSection{
+  height: 100px;
+}
+
+#infohytte1 {
+    width: 34%;
+    background-color: green;
+    height: 100%;
+    float: left;
+}
+
+#infotur {
+    width: 32%;
+    background-color: brown;
+    height: 100%;
+    float: left;
+}
+
+#infohytte2 {
+    width: 34%;
+    background-color: aqua;
+    height: 100%;
+    float: left;
+}
