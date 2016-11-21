@@ -14,24 +14,28 @@
   <div id="container" class="">
     <section id="selectionSection">
 
-      <select class="" name="" id="areaSelect" onChange="finnHytter()">
-        <option value="null">Velg område</option>
-        <option value="bergsdalen">Bergsdalen</option>
-      </select>
+      
 
       <div id="hytter">
+          <select class="" name="" id="areaSelect" onChange="finnHytter()">
+              <option value="null">Velg område</option>
+              <option value="bergsdalen">Bergsdalen</option>
+          </select>
+       
         <!--midlertidige elementer. ferdig liste skal være generert av javascript-->
-        <div class="hytter">
-          hytte1
-        </div>
-        <div class="hytter">
-          hytte2
-        </div>
-        <div class="hytter">
-          hytte 2
-        </div>
-        <div class="hytter">
-          hytte 3
+        <div id="listemedhytter">
+            <div class="hytter">
+                hytte1
+            </div>
+            <div class="hytter">
+                hytte2
+            </div>
+            <div class="hytter">
+                hytte 2
+            </div>
+            <div class="hytter">
+                hytte 3
+            </div>
         </div>
       </div>
     </section>

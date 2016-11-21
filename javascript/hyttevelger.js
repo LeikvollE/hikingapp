@@ -1,3 +1,5 @@
+var hyttediv = document.getElementById("listemedhytter");
+
 function finnHytter() { //funksjon for å generere liste over hytter
   var areaSelect = document.getElementById("areaSelect");
   var sted = areaSelect.options[areaSelect.selectedIndex].value;
@@ -13,9 +15,10 @@ function finnHytter() { //funksjon for å generere liste over hytter
 }
 
 function skrivUtHytter(liste){
+    hyttediv.innerHTML = "";
     for(var i = 0; i < liste.length; i++){
-        for(var j = 0; j < liste[i].length; j++){
-            console.log("" + liste[i][j]);
-        }
+        //for(var j = 0; j < liste[i].length; j++){
+            hyttediv.innerHTML += '<div class="hytter">' + liste[i][2] + '</div>';
+        //}
     }
 }
