@@ -8,7 +8,7 @@ body{
   display: inline-block;
 }
 #mapSection{
-  float: left;
+    clear: both;
   display: inline-block;
 }
 #infoSection{
@@ -21,6 +21,17 @@ body{
 #areaSelect{
   -webkit-appearance: none;
 }
+
+#hytter {
+    height: 400px;
+    background-color: #d82d20;
+}
+
+#map {
+    height: 400px;
+    width: 600px;
+}
+
 .hytter{
   background-color: #d82d20;
   color: white;
