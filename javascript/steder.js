@@ -8,6 +8,11 @@
 
 //må gjøre om alle objekter til array
 
+var hogabu = [L.latLng(60.535, 5.924722), "bergsdalen", "img/hogabu.jpg", "beskrivelse av hogabu"];
+var alexgrieg = [L.latLng(60.536944, 6.079167), "bergsdalen", "img/alexgrieg.jpg", "beskrivelse av alexgrieg"];
+var gullhorgabu = [L.latLng(60.500833, 5.960278), "bergsdalen", "img/gullhorgabu.jpg", "beskrivelse av gullhorgabu"];
+var vending = [L.latLng(60.473889, 6.075278), "bergsdalen", "img/vending.jpg", "beskrivelse av vending"];
+
 /*var hogabu = {
     location: L.latLng(60.535, 5.924722),
     sted: "bergsdalen",
