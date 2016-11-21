@@ -1,51 +1,57 @@
-body{
-  padding: 0px;
-  margin: 0px;
-  position: relative;
+body {
+    padding: 0px;
+    margin: 0px;
 }
-#selectionSection{
-  float: left;
-  display: inline-block;
+
+#selectionSection {
+    float: left;
+    height: 100%;
 }
-#mapSection{
-    clear: both;
-  display: inline-block;
+
+#mapSection {
+    /*display: inline-block;*/
+    height: 75%;
 }
-#infoSection{
-  position: relative;
+
+#infoSection {
+    position: relative;
 }
-#container{
-  margin: 0 auto;
-  width: 66.66%;
+
+#container {
+    margin: 0 auto;
+    width: 66.66%;
+    height: 100%;
 }
-#areaSelect{
-  -webkit-appearance: none;
+
+#areaSelect {
+    -webkit-appearance: none;
 }
 
 #hytter {
-    height: 400px;
-    width: 200px;
+    height: 100%;
+    width: 25%px;
     background-color: #d82d20;
 }
 
 #map {
-    height: 400px;
+    height: 500px;
     width: 600px;
 }
 
-.hytter{
-  background-color: #d82d20;
-  color: white;
-  text-align: center;
-  padding: 5px 0 5px 0;
+.hytter {
+    background-color: #d82d20;
+    color: white;
+    text-align: center;
+    padding: 5px 0 5px 0;
     height: 50px;
 }
-.hytter:hover{
-  background-color: #a80c1c;
+
+.hytter:hover {
+    background-color: #a80c1c;
 }
 
-#infoSection{
-  height: 100px;
+#infoSection {
+    height: 25%;
 }
 
 #infohytte1 {
