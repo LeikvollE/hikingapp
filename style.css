@@ -50,6 +50,7 @@ body{
 
 #infohytte1 {
     width: 34%;
+    /* Gyslige farger er midlertidige */
     background-color: green;
     height: 100%;
     float: left;
@@ -57,6 +58,7 @@ body{
 
 #infotur {
     width: 32%;
+    /* Gyslige farger er midlertidige */
     background-color: brown;
     height: 100%;
     float: left;
@@ -64,6 +66,7 @@ body{
 
 #infohytte2 {
     width: 34%;
+    /* Gyslige farger er midlertidige */
     background-color: aqua;
     height: 100%;
     float: left;
