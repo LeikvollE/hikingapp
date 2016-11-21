@@ -5,9 +5,17 @@ function finnHytter() { //funksjon for å generere liste over hytter
 
   for (var i = 0; i < hytter.length; i++) {
     var j = 0;
-    if (hytter[i][1] = sted) {
+    if (hytter[i][1] === sted) {
       hytteliste.push(hytter[i]);
     }
   }
-  console.log(hytteliste);
+  skrivUtHytter(hytteliste);
+}
+
+function skrivUtHytter(liste){
+    for(var i = 0; i < liste.length; i++){
+        for(var j = 0; j < liste[i].length; j++){
+            console.log("" + liste[i][j]);
+        }
+    }
 }
