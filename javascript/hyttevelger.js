@@ -35,6 +35,11 @@ function hytteInfo(hytteId) {
     for (var i = 0; i < hytter.length; i++) { //skriver ut i infoboksen. kun hytte 1 foreløpig.
         if (hytter[i][5] === hytteId) {
             
+            if(erValgt(hytter[i])){
+                //TODO Kode for å fjerne elementet som ble trykket på
+                break;
+            }
+            
             if(valgteHytter.length === 2){
                 valgteHytter[0] = valgteHytter[1];
                 valgteHytter.pop();
@@ -43,7 +48,7 @@ function hytteInfo(hytteId) {
                 valgteHytter.push(hytter[i]);
             }
             
-            
+            break;
             
             /*infohytte1.innerHTML = "<center><b>" + hytter[i][2] + "</b></center><br>" + "<center>" + hytter[i][4] + "</center>";
             infohytte1.innerHTML += "<center><img src=" + hytter[i][3] + " width='90%'></center>";
@@ -60,4 +65,14 @@ function hytteInfo(hytteId) {
             valgteHytter[1][0]
         ]);
     }
+}
+
+function erValgt(hytte) {
+    var ant = valgteHytter.length;
+    
+    for(var i = 0; i < ant; i++) {
+        if (valgteHytter[i][5] === hytte[5]) return true;
+    }
+    
+    return false;
 }
