@@ -34,12 +34,16 @@ function hytteInfo(hytteId) {
 
     for (var i = 0; i < hytter.length; i++) { //skriver ut i infoboksen. kun hytte 1 foreløpig.
         if (hytter[i][5] === hytteId) {
+<<<<<<< HEAD
             
             if(erValgt(hytter[i])){
                 //TODO Kode for å fjerne elementet som ble trykket på
                 break;
             }
             
+=======
+
+>>>>>>> a4cdc6e6db01b51f2ff7819e30bbe5d2137bfddc
             if(valgteHytter.length === 2){
                 valgteHytter[0] = valgteHytter[1];
                 valgteHytter.pop();
@@ -47,23 +51,40 @@ function hytteInfo(hytteId) {
             } else {
                 valgteHytter.push(hytter[i]);
             }
+<<<<<<< HEAD
             
             break;
             
+=======
+
+
+
+>>>>>>> a4cdc6e6db01b51f2ff7819e30bbe5d2137bfddc
             /*infohytte1.innerHTML = "<center><b>" + hytter[i][2] + "</b></center><br>" + "<center>" + hytter[i][4] + "</center>";
             infohytte1.innerHTML += "<center><img src=" + hytter[i][3] + " width='90%'></center>";
             map.setView(hytter[i][0], 15);*/
         }
     }
-    
+
     infohytte1.innerHTML = "<center><b>" + valgteHytter[0][2] + "</b></center><br>" + "<center>" + valgteHytter[0][4] + "</center>";
-    infohytte2.innerHTML = "<center><b>" + valgteHytter[1][2] + "</b></center><br>" + "<center>" + valgteHytter[1][4] + "</center>";
-    
-    if(valgteHytter.length === 2){
+    if (valgteHytter.length === 2) {
+      infohytte2.innerHTML = "<center><b>" + valgteHytter[1][2] + "</b></center><br>" + "<center>" + valgteHytter[1][4] + "</center>";
+    }
+
+    if(valgteHytter.length === 2){    //tegner inn rute på kart dersom 2 hytter er valgt
         routeControl.setWaypoints([
             valgteHytter[0][0],
             valgteHytter[1][0]
         ]);
+    }else {
+      for (var i = 0; i < startSteder.length; i++) {
+        if (startSteder[i][2] === hytteId) {
+          routeControl.setWaypoints([
+              valgteHytter[0][0],
+              startSteder[i][0]
+          ]);
+        }
+      }
     }
 }
 
