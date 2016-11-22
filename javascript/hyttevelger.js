@@ -53,4 +53,11 @@ function hytteInfo(hytteId) {
     
     infohytte1.innerHTML = "<center><b>" + valgteHytter[0][2] + "</b></center><br>" + "<center>" + valgteHytter[0][4] + "</center>";
     infohytte2.innerHTML = "<center><b>" + valgteHytter[1][2] + "</b></center><br>" + "<center>" + valgteHytter[1][4] + "</center>";
+    
+    if(valgteHytter.length === 2){
+        routeControl.setWaypoints([
+            valgteHytter[0][0],
+            valgteHytter[1][0]
+        ]);
+    }
 }
