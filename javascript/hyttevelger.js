@@ -2,11 +2,11 @@
 var hyttediv = document.getElementById("listemedhytter");
 
 function finnHytter() { //funksjon for å generere liste over hytter
-  var areaSelect = document.getElementById("areaSelect");
-  var sted = areaSelect.options[areaSelect.selectedIndex].value;
-  var hytteliste = [];
+  var areaSelect = document.getElementById("areaSelect");         //dropdown for turområde
+  var sted = areaSelect.options[areaSelect.selectedIndex].value;  //henter valgt område
+  var hytteliste = [];                                            //variabel for hytter i valgt område
 
-  for (var i = 0; i < hytter.length; i++) {
+  for (var i = 0; i < hytter.length; i++) {                       //går gjennom alle hyttene til turlaget og legger til de som ligger i valgt område i hyttelisten.
     var j = 0;
     if (hytter[i][1] === sted) {
       hytteliste.push(hytter[i]);
@@ -21,7 +21,19 @@ function skrivUtHytter(liste){
     for(var i = 0; i < liste.length; i++){
         //for(var j = 0; j < liste[i].length; j++){
             //Skriver foreløpig bare ut navnet på hytten, formatering må gjøres f.eks. Stor bokstav i navnet til hytten
-            hyttediv.innerHTML += '<div class="hytter">' + liste[i][2] + '</div>';
+            hyttediv.innerHTML += '<div class="hytter" onclick="hytteInfo(' + liste[i][5] +')">' + liste[i][2] + '</div>';
         //}
     }
+}
+
+//funksjon for å skrive ut info om valgt hytte. må vite om dette er valgt hytte nr 1 eller nr 2.
+function hytteInfo(hytteId){
+  var infohytte1 = document.getElementById("infohytte1");
+  var infohytte2 = document.getElementById("infohytte2");
+
+  for (var i = 0; i < hytter.length; i++) {                       //skriver ut i infoboksen. kun hytte 1 foreløpig.
+    if (hytter[i][5] === hytteId) {
+      infohytte1.innerHTML = "<center><b>" + hytter[i][2] + "</b></center><br>" + "<center>" + hytter[i][4] + "</center>";
+    }
+  }
 }

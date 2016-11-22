@@ -4,14 +4,17 @@
 ];*/ //kommentert ut pga eirik ikke har sagt hva variabelen er til.
 
 //objekter må inneholde: koordinater, sted (bergsdalen), bilde av hytte, beskrivelse av hyttefasiliteter og området rundt.
-//datastruktur på liste over hytter: hytteliste[hytte[egenskaper]]. elementene til hytte er [sted, location, bilde, beskrivelse]
+//datastruktur på liste over hytter: hytteliste[hytte[karfunksjon(koordinater), område, hyttenavn, bildested, beskrivelse, ID]].
 
 var hytter = [
-  [L.latLng(60.535, 5.924722), "bergsdalen", "høgabu", "img/hogabu.jpg", "beskrivelse av hogabu"],
-  [L.latLng(60.536944, 6.079167), "bergsdalen", "alexander grieg", "img/alexgrieg.jpg", "beskrivelse av alexgrieg"],
-  [L.latLng(60.500833, 5.960278), "bergsdalen", "gullhorgabu", "img/gullhorgabu.jpg", "beskrivelse av gullhorgabu"],
-  [L.latLng(60.473889, 6.075278), "bergsdalen", "vending", "img/vending.jpg", "beskrivelse av vending"],
-  [L.latLng(60.473889, 6.075278), "dal", "vending", "img/vending.jpg", "beskrivelse av vending"]
+  [L.latLng(60.535, 5.924722), "bergsdalen", "Høgabu", "img/hogabu.jpg", "beskrivelse av hogabu", 0],
+  [L.latLng(60.536944, 6.079167), "bergsdalen", "Alexander Grieghytten", "img/alexgrieg.jpg", "beskrivelse av alexgrieg", 1],
+  [L.latLng(60.500833, 5.960278), "bergsdalen", "Gullhorgabu", "img/gullhorgabu.jpg", "beskrivelse av gullhorgabu", 2],
+  [L.latLng(60.473889, 6.075278), "bergsdalen", "Vending", "img/vending.jpg", "beskrivelse av vending", 3],
+  [L.latLng(60.473889, 6.075278), "dal", "vending", "img/vending.jpg", "kopi for å teste hyttevelger", 4],
+  /*[coords, "bergsdalen", "Kiellandbu", "img/kiellandbu.jpg", "beskrivelse", 5],
+  [, "bergsdalen", "Breidablik", "img/breidablik.jpg", 6],
+  [, "bergsdalen", "Vending turisthytte", "img/vturisthytte.jpg", 7]*/
 ]; //bruker annet sted enn bergsdalen på siste element
 
 /*var hogabu = {

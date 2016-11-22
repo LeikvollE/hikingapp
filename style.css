@@ -29,7 +29,7 @@ body {
 
 #hytter {
     height: 100%;
-    width: 25%px;
+    width: 25%;
     background-color: #d82d20;
 }
 
@@ -44,6 +44,7 @@ body {
     text-align: center;
     padding: 5px 0 5px 0;
     height: 50px;
+    width: 100px;
 }
 
 .hytter:hover {
