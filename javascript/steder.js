@@ -12,9 +12,9 @@ var hytter = [
   [L.latLng(60.500833, 5.960278), "bergsdalen", "Gullhorgabu", "img/gullhorgabu.jpg", "beskrivelse av gullhorgabu", 2],
   [L.latLng(60.473889, 6.075278), "bergsdalen", "Vending", "img/vending.jpg", "beskrivelse av vending", 3],
   [L.latLng(60.473889, 6.075278), "dal", "vending", "img/vending.jpg", "kopi for å teste hyttevelger", 4],
-  /*[coords, "bergsdalen", "Kiellandbu", "img/kiellandbu.jpg", "beskrivelse", 5],
-  [, "bergsdalen", "Breidablik", "img/breidablik.jpg", 6],
-  [, "bergsdalen", "Vending turisthytte", "img/vturisthytte.jpg", 7]*/
+  [L.latLng(60.514602, 6.201278), "bergsdalen", "Kiellandbu", "img/kiellandbu.jpg", "beskrivelse", 5],
+  [L.latLng(60.465862, 6.125688), "bergsdalen", "Breidablik", "img/breidablik.jpg", 6],
+  [L.latLng(60.474026, 6.075167), "bergsdalen", "Vending turisthytte", "img/vturisthytte.jpg", 7]
 ]; //bruker annet sted enn bergsdalen på siste element
 
 /*var hogabu = {
