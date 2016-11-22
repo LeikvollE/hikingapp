@@ -11,3 +11,7 @@ L.tileLayer('http://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=nor
 L.tileLayer('http://mt3.turistforeningen.no/prod/trail_summer/{z}/{x}/{y}.png', {
     attribution: '<a href="https://www.dnt.no/">DNT</a>'
 }).addTo(map);
+
+$('map').on('map-container-resize', function () {
+    map.invalidateSize(); // doesn't seem to do anything
+});
