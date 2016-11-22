@@ -13,8 +13,7 @@ var hytter = [
   [L.latLng(60.473889, 6.075278), "bergsdalen", "Vending", "img/vending.jpg", "beskrivelse av vending", 3],
   [L.latLng(60.473889, 6.075278), "dal", "vending", "img/vending.jpg", "kopi for å teste hyttevelger", 4],
   [L.latLng(60.514602, 6.201278), "bergsdalen", "Kiellandbu", "img/kiellandbu.jpg", "beskrivelse", 5],
-  [L.latLng(60.465862, 6.125688), "bergsdalen", "Breidablik", "img/breidablik.jpg", "beskrivelse", 6],
-  [L.latLng(60.474026, 6.075167), "bergsdalen", "Vending turisthytte", "img/vturisthytte.jpg", "beskrivelse", 7]
+  [L.latLng(60.465862, 6.125688), "bergsdalen", "Breidablik", "img/breidablik.jpg", "beskrivelse", 6]
 ]; //bruker annet sted enn bergsdalen på siste element
 
 /*var hogabu = {
