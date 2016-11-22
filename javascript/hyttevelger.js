@@ -34,6 +34,8 @@ function hytteInfo(hytteId){
   for (var i = 0; i < hytter.length; i++) {                       //skriver ut i infoboksen. kun hytte 1 foreløpig.
     if (hytter[i][5] === hytteId) {
       infohytte1.innerHTML = "<center><b>" + hytter[i][2] + "</b></center><br>" + "<center>" + hytter[i][4] + "</center>";
+        infohytte1.innerHTML += "<center><img src=" + hytter[i][3] + " width='90%'></center>";
+        map.setView(hytter[i][0], 15);
     }
   }
 }
