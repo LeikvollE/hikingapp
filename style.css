@@ -6,15 +6,19 @@ body {
 #selectionSection {
     float: left;
     height: 100%;
+    width: 33%;
+    background-color: #d82d20;
 }
 
 #mapSection {
     /*display: inline-block;*/
-    height: 75%;
+    float: left;
+    width: 67%;
 }
 
 #infoSection {
     position: relative;
+    clear: both;
 }
 
 #container {
@@ -29,7 +33,7 @@ body {
 
 #hytter {
     height: 100%;
-    width: 25%;
+    width: 100%;
     background-color: #d82d20;
 }
 
@@ -43,8 +47,8 @@ body {
     color: white;
     text-align: center;
     padding: 5px 0 5px 0;
-    height: 50px;
-    width: 100px;
+    width: 100%;
+    height: 100%;
 }
 
 .hytter:hover {
