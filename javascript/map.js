@@ -51,9 +51,9 @@ var routeControl = L.Routing.control({  //Hovedvariabel for rutekontrollen, styr
 routeControl.on('routesfound', function (e) {
     distance = e.routes[0].summary.totalDistance;
     time = e.routes[0].summary.totalTime;
-    document.getElementById("infotur").innerHTML = "<center>Rute</center><center>Tid: " + time.toString().toHHMMSS() + "</center><center>Lengde: " + distance.toFixed(1);//"<b>Lengde:</b> " + distance + " km, <b>Tid: </b>" + time.toString().toHHMMSS();
+    document.getElementById("infotur").innerHTML = "<center><b>Rute</b></center><center>Tid: " + time.toString().toHHMMSS() + "</center><center>Lengde: " + distance.toFixed(1);//"<b>Lengde:</b> " + distance + " km, <b>Tid: </b>" + time.toString().toHHMMSS();
     if(valgteHytter.length === 2){
-        document.getElementById("infotur").innerHTML += "<center>Høydeforskjell: " + Math.abs(valgteHytter[1][6] - valgteHytter[0][6]) + "</center>";
+        document.getElementById("infotur").innerHTML += "<center>Høydeforskjell: " + Math.abs(valgteHytter[1][6] - valgteHytter[0][6]) + "m</center>";
     }
 });
 

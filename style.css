@@ -6,20 +6,22 @@
 
 body, html {
     height: 100%;
+    font-family: "DTL";
 }
 
 #container {
     height: 100%;
     width: 80%;
-    background-color: aqua;
+    /*background-color: aqua;*/
     margin: auto;
 }
 
 #selectionSection {
     height: 70%;
     width: 33%;
-    background-color: red;
+    background-color: #d82d20;
     float: left;
+    overflow-y: scroll;
 }
 
 #mapSection {
@@ -33,7 +35,7 @@ body, html {
     clear: both;
     width: 100%;
     height: 30%;
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
 }
 
 #map {
@@ -43,12 +45,47 @@ body, html {
 
 .hytter {
     padding: 10px;
+    display: inline-block;
+    color: white;
 }
 
 .hytter:hover {
-    background-color: aqua;
+    background-color: #a80c1c;
 }
 
+.hytter > img {
+    width: 40%;
+    float: left;
+}
+
+.hytter > b {
+    margin: 3px;
+    font-family: "DTL";
+}
+
+#infohytte1 {
+    width: 34%;
+    /* Gyslige farger er midlertidige*/
+    /*background-color: green;*/
+    height: 100%;
+    float: left;
+}
+
+#infotur {
+    width: 32%;
+    /* Gyslige farger er midlertidige */
+    /*background-color: brown;*/
+    height: 100%;
+    float: left;
+}
+
+#infohytte2 {
+    width: 34%;
+    /* Gyslige farger er midlertidige */
+    /*background-color: aqua;*/
+    height: 100%;
+    float: left;
+}
 
 
 
@@ -70,6 +107,7 @@ body, html {
     width: 100%;
     border: none;
     box-shadow: none;
+    font-family: "DTL";
     background-color: transparent;
     background-image: none;
     -webkit-appearance: none;
@@ -79,4 +117,11 @@ body, html {
 
 .select-style select:focus {
     outline: none;
+}
+
+@font-face {
+    font-family: "DTL";
+    src: url('font/DTL.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }

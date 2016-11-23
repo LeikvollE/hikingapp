@@ -22,7 +22,7 @@ function skrivUtHytter(liste) {
     for (var i = 0; i < liste.length; i++) {
         //for(var j = 0; j < liste[i].length; j++){
         //Skriver foreløpig bare ut navnet på hytten, formatering må gjøres f.eks. Stor bokstav i navnet til hytten
-        hyttediv.innerHTML += '<div class="hytter" onclick="hytteInfo(' + liste[i][5] + ')" id="hytte' + liste[i][5] + '"">' + liste[i][2] + '</div>';
+        hyttediv.innerHTML += '<div class="hytter" onclick="hytteInfo(' + liste[i][5] + ')" id="hytte' + liste[i][5] + '"><img src="' + liste[i][3] + '"><b>' + liste[i][2] + '</b></div>';
         //}
     }
 }
