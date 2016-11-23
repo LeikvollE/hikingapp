@@ -22,7 +22,7 @@ function skrivUtHytter(liste) {
     for (var i = 0; i < liste.length; i++) {
         //for(var j = 0; j < liste[i].length; j++){
         //Skriver foreløpig bare ut navnet på hytten, formatering må gjøres f.eks. Stor bokstav i navnet til hytten
-        hyttediv.innerHTML += '<div class="hytter" onclick="hytteInfo(' + liste[i][5] + ')">' + liste[i][2] + '</div>';
+        hyttediv.innerHTML += '<div class="hytter" onclick="hytteInfo(' + liste[i][5] + ')" id="hytte' + liste[i][5] + '"">' + liste[i][2] + '</div>';
         //}
     }
 }
@@ -31,6 +31,7 @@ function skrivUtHytter(liste) {
 function hytteInfo(hytteId) {
     var infohytte1 = document.getElementById("infohytte1");
     var infohytte2 = document.getElementById("infohytte2");
+    var hytteElement = document.getElementById("hytte" + hytteId);
 
     for (var i = 0; i < hytter.length; i++) { //skriver ut i infoboksen. kun hytte 1 foreløpig.
         if (hytter[i][5] === hytteId) {
@@ -38,6 +39,8 @@ function hytteInfo(hytteId) {
             if(erValgt(hytter[i])){
                 //TODO Kode for å fjerne elementet som ble trykket på
                 break;
+            }else {
+              hytteElement.className += " valgt";
             }
 
             if(valgteHytter.length === 2){
@@ -47,9 +50,9 @@ function hytteInfo(hytteId) {
             } else {
                 valgteHytter.push(hytter[i]);
             }
-            
+
             break;
-            
+
             /*infohytte1.innerHTML = "<center><b>" + hytter[i][2] + "</b></center><br>" + "<center>" + hytter[i][4] + "</center>";
             infohytte1.innerHTML += "<center><img src=" + hytter[i][3] + " width='90%'></center>";
             map.setView(hytter[i][0], 15);*/
