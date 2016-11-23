@@ -2,6 +2,9 @@
 //Setter kartet sin fokus over Hordaland
 var map = L.map('map').setView([60.535, 5.924722], 10);
 
+var distance;
+var time;
+
 //Henter norgeskart fra statkart, og legger det til i kartvariabelen slik at det vises til brukeren
 L.tileLayer('http://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=norges_grunnkart&zoom={z}&x={x}&y={y}', {
     attribution: '<a href="http://www.kartverket.no/">Kartverket</a>' //Inneholder hvem som er eier av kartet
@@ -44,3 +47,26 @@ var routeControl = L.Routing.control({  //Hovedvariabel for rutekontrollen, styr
     summaryTemplate: '<div class="start">{name}</div><div class="info {costing}">{distance}, {time}</div>',  //Egentlig unødvendig siden vi ikke lar brukeren ha mulighet til å vise veibeskrivelser
     routeWhileDragging: false,  //Gjør at vi ikke rekalkulerer ruten hver gang brukeren trykker på den
 }).addTo(map);
+
+routeControl.on('routesfound', function (e) {
+    distance = e.routes[0].summary.totalDistance;
+    time = e.routes[0].summary.totalTime;
+    document.getElementById("infotur").innerHTML = "<center>Rute</center><center>Tid: " + time.toString().toHHMMSS() + "</center><center>Lengde: " + distance.toFixed(1) + " km</center>";//"<b>Lengde:</b> " + distance + " km, <b>Tid: </b>" + time.toString().toHHMMSS();
+});
+
+String.prototype.toHHMMSS = function () {
+    var sec_num = parseInt(this, 10);
+    var hours = Math.floor(sec_num / 3600);
+    var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+
+    if (hours < 10) {
+        hours = "" + hours;
+    }
+    if (minutes < 10) {
+        minutes = "" + minutes;
+    }
+    if(hours == 0) {
+        return minutes + 'min';
+    }
+    return hours + 't ' + minutes + 'm';
+}
