@@ -10,9 +10,9 @@
     <title>Planlegging av turer</title>
 </head>
 <body>
-   
+
    <div id="container">
-       
+
        <section id="selectionSection">
            <div class="select-style">
                <select class="" name="" id="areaSelect" onChange="finnHytter()">
@@ -21,19 +21,15 @@
                    <option value="dal">Dal</option>
                </select>
            </div>
-           
+
            <div id="listemedhytter">
-               <div class="hytter" onclick="hytteInfo(0)" id="hytte0">
-                   <img src="img/hogabu.jpg">
-                   <b>Høgabu</b>
-               </div>
            </div>
        </section>
-       
+
        <section id="mapSection">
            <div id="map"></div>
        </section>
-       
+
        <section id="infoSection">
            <div id="infohytte1">
                <center><b>Hytte 1</b></center>
@@ -54,9 +50,9 @@
                <center>Betjening: Ja</center>
            </div>
        </section>
-       
+
    </div>
-   
+
     <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 
     <script src="javascript/leaflet-routing-machine.js"></script>
@@ -68,6 +64,6 @@
 
     <script type="text/javascript" src="javascript/steder.js"></script>
     <script type="text/javascript" src="javascript/hyttevelger.js"></script>
-    
+
 </body>
 </html>
