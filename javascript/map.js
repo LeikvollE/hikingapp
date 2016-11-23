@@ -5,6 +5,8 @@ var map = L.map('map').setView([60.535, 5.924722], 10);
 var distance;
 var time;
 
+
+
 //Henter norgeskart fra statkart, og legger det til i kartvariabelen slik at det vises til brukeren
 L.tileLayer('http://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=norges_grunnkart&zoom={z}&x={x}&y={y}', {
     attribution: '<a href="http://www.kartverket.no/">Kartverket</a>' //Inneholder hvem som er eier av kartet
@@ -24,6 +26,7 @@ var routeControl = L.Routing.control({  //Hovedvariabel for rutekontrollen, styr
     fitSelectedRoutes: true,
     show: false,  //Skjuler veibeskrivelser
     collapsible: false,  //Gjør det umulig å vise veibeskrivelsene
+    containerClassName: 'hide',
     draggableWaypoints : false,  //Gjør slik at brukeren selv ikke kan endre start/sluttsted på ruten
     addWaypoints : false,  //Gjør slik at brukeren ikke kan legge til flere punkter på ruten
     lineOptions: {  //Stil som ruten vises i
@@ -41,11 +44,13 @@ var routeControl = L.Routing.control({  //Hovedvariabel for rutekontrollen, styr
         ]
     },
     router: L.Routing.mapzen('mapzen-N1c12tj', {  //API key, vi kan prøve å endre til routing-machine default hvis vi har tid senere
-        costing: 'pedestrian'
+        costing: 'pedestrian',
+        walking_speed: 2
     }),
     formatter: new L.Routing.mapzenFormatter(),
     summaryTemplate: '<div class="start">{name}</div><div class="info {costing}">{distance}, {time}</div>',  //Egentlig unødvendig siden vi ikke lar brukeren ha mulighet til å vise veibeskrivelser
     routeWhileDragging: false,  //Gjør at vi ikke rekalkulerer ruten hver gang brukeren trykker på den
+    
 }).addTo(map);
 
 routeControl.on('routesfound', function (e) {
