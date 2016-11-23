@@ -39,6 +39,11 @@ function hytteInfo(hytteId) {
             if(erValgt(hytter[i])){
                 //TODO Kode for å fjerne elementet som ble trykket på
                 hytteElement.className = hytteElement.className.replace(/\bvalgt\b/,'');
+                if (hytter[i][5]===valgteHytter[0][5]) {
+                  valgteHytter.splice(0,1);
+                }else {
+                  valgteHytter.splice(1,1);
+                }
                 break;
             }else {
               hytteElement.className += " valgt"; //legger til klassen "valgt" på hytter som er valgt
