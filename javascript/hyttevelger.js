@@ -38,12 +38,14 @@ function hytteInfo(hytteId) {
 
             if(erValgt(hytter[i])){
                 //TODO Kode for å fjerne elementet som ble trykket på
+                hytteElement.className = hytteElement.className.replace(/\bvalgt\b/,'');
                 break;
             }else {
               hytteElement.className += " valgt";
             }
 
             if(valgteHytter.length === 2){
+                document.getElementById("hytte" + valgteHytter[0][5]).className = document.getElementById("hytte" + valgteHytter[0][5]).className.replace(/\bvalgt\b/,'');
                 valgteHytter[0] = valgteHytter[1];
                 valgteHytter.pop();
                 valgteHytter.push(hytter[i])
