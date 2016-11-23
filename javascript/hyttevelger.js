@@ -68,7 +68,7 @@ function hytteInfo(hytteId) {
         ]);
     }else {
       for (var i = 0; i < startSteder.length; i++) {  //finner startsted for tur til hytte dersom kun 1 hytte er valgt
-        if (startSteder[i][2] === hytteId) {
+        if (startSteder[i][2] === valgteHytter[0][5]) {
           routeControl.setWaypoints([
               valgteHytter[0][0],
               startSteder[i][0]
