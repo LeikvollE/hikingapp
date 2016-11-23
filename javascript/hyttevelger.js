@@ -40,10 +40,10 @@ function hytteInfo(hytteId) {
                 //TODO Kode for å fjerne elementet som ble trykket på
                 break;
             }else {
-              hytteElement.className += " valgt";
+              hytteElement.className += " valgt"; //legger til klassen "valgt" på hytter som er valgt
             }
 
-            if(valgteHytter.length === 2){
+            if(valgteHytter.length === 2){          //dersom 2 hytter er valgt fra før, fjernes den siste fra arrayet. ellers blir den nye hytta lagt til i arrayet
                 valgteHytter[0] = valgteHytter[1];
                 valgteHytter.pop();
                 valgteHytter.push(hytter[i])
@@ -59,7 +59,7 @@ function hytteInfo(hytteId) {
         }
     }
 
-    infohytte1.innerHTML = "<center><b>" + valgteHytter[0][2] + "</b></center><br>" + "<center>" + valgteHytter[0][4] + "</center>";
+    infohytte1.innerHTML = "<center><b>" + valgteHytter[0][2] + "</b></center><br>" + "<center>" + valgteHytter[0][4] + "</center>"; //legger til
     if (valgteHytter.length === 2) {
       infohytte2.innerHTML = "<center><b>" + valgteHytter[1][2] + "</b></center><br>" + "<center>" + valgteHytter[1][4] + "</center>";
     }
@@ -70,7 +70,7 @@ function hytteInfo(hytteId) {
             valgteHytter[1][0]
         ]);
     }else {
-      for (var i = 0; i < startSteder.length; i++) {
+      for (var i = 0; i < startSteder.length; i++) {  //finner startsted for tur til hytte dersom kun 1 hytte er valgt
         if (startSteder[i][2] === hytteId) {
           routeControl.setWaypoints([
               valgteHytter[0][0],
@@ -81,7 +81,7 @@ function hytteInfo(hytteId) {
     }
 }
 
-function erValgt(hytte) {
+function erValgt(hytte) {                 //sjekker om hytte er valgt
     var ant = valgteHytter.length;
 
     for(var i = 0; i < ant; i++) {
