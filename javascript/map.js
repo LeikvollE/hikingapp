@@ -51,7 +51,7 @@ var routeControl = L.Routing.control({  //Hovedvariabel for rutekontrollen, styr
 routeControl.on('routesfound', function (e) {
     distance = e.routes[0].summary.totalDistance;
     time = e.routes[0].summary.totalTime;
-    document.getElementById("infotur").innerHTML = "<center>Rute</center><center>Tid: " + time.toString().toHHMMSS() + "</center><center>Lengde: " + distance.toFixed(1) + " km</center>";//"<b>Lengde:</b> " + distance + " km, <b>Tid: </b>" + time.toString().toHHMMSS();
+    document.getElementById("infotur").innerHTML = "<center>Rute</center><center>Tid: " + time.toString().toHHMMSS() + "</center><center>Lengde: " + distance.toFixed(1) + " km</center> <center>Høydeforskjell: " + Math.abs(valgteHytter[0][6] - valgteHytter[1][6]) + "m</center>";//"<b>Lengde:</b> " + distance + " km, <b>Tid: </b>" + time.toString().toHHMMSS();
 });
 
 String.prototype.toHHMMSS = function () {
@@ -68,5 +68,5 @@ String.prototype.toHHMMSS = function () {
     if(hours == 0) {
         return minutes + 'min';
     }
-    return hours + 't ' + minutes + 'm';
+    return hours + 't ' + minutes + 'min';
 }
