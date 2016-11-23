@@ -22,6 +22,7 @@ body, html {
     background-color: #d82d20;
     float: left;
     overflow-y: scroll;
+    color: white;
 }
 
 #mapSection {
@@ -61,10 +62,16 @@ body, html {
     background-color: #b00e1e;
 }
 
+#listemedhytter > p {
+    margin: 10px;
+    font-size: 1vw;
+}
+
 #infoSection {
     clear: both;
     width: 100%;
     height: 30%;
+    padding-top: 10px;
     /*background-color: blueviolet;*/
 }
 

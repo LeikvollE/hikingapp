@@ -12,10 +12,10 @@ var hytter = [
 //struktur på startsteder: startSteder[startsted[kartfunksjon(koordinater), beskrivelse, ID]]
 //hver hytte har ett designert startsted dersom man kun har valgt 1 hytte i hyttevelgeren
 var startSteder = [
-  [L.latLng(60.571399, 5.949952), "lid i bergsdalen", 0],
-  [L.latLng(60.534741, 6.074092), "parkeringsplass ved hovedveien", 1],
-  [L.latLng(60.544582, 6.030346), "småbrekkene i bergsdalen", 2],
-  [L.latLng(60.534741, 6.074092), "fra hovedveien", 3],
-  [L.latLng(60.560545, 6.208481), "hodnaberg i enden av hamlagrøvatnet", 4],
-  [L.latLng(60.534741, 6.074092), "fra hovedveien", 5]
+  [L.latLng(60.571399, 5.949952), "Lid i bergsdalen", 0],
+  [L.latLng(60.534741, 6.074092), "Parkeringsplass ved Bergsdalsvegen", 1],
+  [L.latLng(60.544582, 6.030346), "Småbrekkene i bergsdalen", 2],
+  [L.latLng(60.534741, 6.074092), "Fra hovedveien", 3],
+  [L.latLng(60.560545, 6.208481), "Hodnaberg i enden av hamlagrøvatnet", 4],
+  [L.latLng(60.534741, 6.074092), "Parkeringsplass ved Bergdalsvegen", 5]
 ];
