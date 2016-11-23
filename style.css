@@ -5,7 +5,7 @@
  */
 
 body, html {
-    height: 100%;
+    height: 95%;
     font-family: "DTL";
 }
 
@@ -54,6 +54,7 @@ body, html {
 .hytter > b {
     margin: 3px;
     font-family: "DTL";
+    font-size: 1.2vw; /*responsive fontstørrelse*/
 }
 
 .valgt{
@@ -91,8 +92,8 @@ body, html {
     float: left;
 }
 
-#infoSection > div > b {
-    margin-top: 30px;
+#infoSection > div {
+    font-size: 1.2vw; /*responsive fontstørrelse*/
 }
 
 
