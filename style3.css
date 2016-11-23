@@ -1,0 +1,87 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+#selectionSection {
+    float: left;
+    height: 100%;
+    width: 33%;
+    background-color: #d82d20;
+}
+
+#mapSection {
+    /*display: inline-block;*/
+    float: left;
+    width: 67%;
+}
+
+#infoSection {
+    position: relative;
+    clear: both;
+}
+
+#container {
+    margin: 0 auto;
+    width: 66.66%;
+    height: 100%;
+}
+
+#areaSelect {
+    -webkit-appearance: none;
+}
+
+#hytter {
+    height: 100%;
+    width: 100%;
+    background-color: #d82d20;
+}
+
+#map {
+    height: 400px;
+    width: 600px;
+}
+
+.hytter {
+    background-color: #d82d20;
+    color: white;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hytter:hover {
+    background-color: #a80c1c;
+}
+
+#infoSection {
+    height: 25%;
+}
+
+#infohytte1 {
+    width: 34%;
+    /* Gyslige farger er midlertidige*/
+    background-color: green;
+    height: 100%;
+    float: left;
+}
+
+#infotur {
+    width: 32%;
+    /* Gyslige farger er midlertidige */
+    background-color: brown;
+    height: 100%;
+    float: left;
+}
+
+#infohytte2 {
+    width: 34%;
+    /* Gyslige farger er midlertidige */
+    background-color: aqua;
+    height: 100%;
+    float: left;
+}
+.valgt{
+      background-color: #b00e1e;
+}

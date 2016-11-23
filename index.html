@@ -1,72 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <!--stylesheets-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="javascript/leaflet-routing-machine.css" />
     <link rel="stylesheet" href="https://unpkg.com/lrm-mapzen/dist/leaflet.routing.mapzen.css">
     <link rel="shortcut icon" href="favicon.png" >
+    <link rel="stylesheet" href="style2.css">
     <title>Planlegging av turer</title>
 </head>
-
 <body>
-    <div id="container">
-
-        <section id="selectionSection">
-            <div id="hytter">
-                <select class="" name="" id="areaSelect" onChange="finnHytter()">
-                    <option value="null">Velg område</option>
-                    <option value="bergsdalen">Bergsdalen</option>
-                    <option value="dal">Dal</option>
-                </select>
-
-                <div id="listemedhytter">
-                   
-                    <div class="hytter" id="test">
-                        <img src="img/hogabu.jpg" style="width: 50%; float: left;">
-                        <b style="float: left;">Høgabu</b>
-                        <p>Sengeplasser: 23</p>
-                    </div>
-                    
-                    <div class="hytter" id="test" style="clear: both;">
-                        <img src="img/alexgrieg.jpg" style="width: 50%;">
-                        <b style="float: left;">Høgabu</b>
-                        <p>Sengeplasser: 23</p>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-
-        <section id="mapSection">
-            <div id="map"></div>
-        </section>
-
-        <section id="infoSection">
-            <div id="infohytte1">
-                <center><b>Hytte 1</b></center>
-                <center>Sengeplasser: 25</center>
-                <center>Hundebur: Ja</center>
-                <center>Betjening: Ja</center>
-            </div>
-            <div id="infotur">
-                <center><b>Rute</b></center>
-                <center>Tid: 5t 23m</center>
-                <center>Lengde: 25km</center>
-                <center>Høydeforskjell: 244m</center>
-            </div>
-            <div id="infohytte2">
-                <center><b>Hytte 2</b></center>
-                <center>Sengeplasser: 4</center>
-                <center>Hundebur: Nei</center>
-                <center>Betjening: Ja</center>
-            </div>
-        </section>
-    </div>
-    
+   
+   <div id="container">
+       
+       <section id="selectionSection">
+           <div class="select-style">
+               <select class="" name="" id="areaSelect" onChange="finnHytter()">
+                   <option value="null">Velg område</option>
+                   <option value="bergsdalen">Bergsdalen</option>
+                   <option value="dal">Dal</option>
+               </select>
+           </div>
+           
+           <div id="listemedhytter">
+               <div class="hytter">
+                   <img src="img/hogabu.jpg" style="width: 40%; float: left;">
+                   <b style="margin: 3px;">Høgabu</b>
+               </div>
+           </div>
+       </section>
+       
+       <section id="mapSection">
+           <div id="map"></div>
+       </section>
+       
+       <section id="infoSection">
+           
+       </section>
+       
+   </div>
+   
     <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 
     <script src="javascript/leaflet-routing-machine.js"></script>
@@ -78,6 +51,6 @@
 
     <script type="text/javascript" src="javascript/steder.js"></script>
     <script type="text/javascript" src="javascript/hyttevelger.js"></script>
+    
 </body>
-
 </html>

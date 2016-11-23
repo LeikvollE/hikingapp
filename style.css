@@ -1,87 +1,82 @@
-body {
-    padding: 0px;
-    margin: 0px;
-}
+/*
+ *
+ * Alt av farger er midlertidig
+ *
+ */
 
-#selectionSection {
-    float: left;
+body, html {
     height: 100%;
-    width: 33%;
-    background-color: #d82d20;
-}
-
-#mapSection {
-    /*display: inline-block;*/
-    float: left;
-    width: 67%;
-}
-
-#infoSection {
-    position: relative;
-    clear: both;
 }
 
 #container {
-    margin: 0 auto;
-    width: 66.66%;
     height: 100%;
+    width: 80%;
+    background-color: aqua;
+    margin: auto;
 }
 
-#areaSelect {
-    -webkit-appearance: none;
+#selectionSection {
+    height: 70%;
+    width: 33%;
+    background-color: red;
+    float: left;
 }
 
-#hytter {
-    height: 100%;
-    width: 100%;
-    background-color: #d82d20;
-}
-
-#map {
-    height: 400px;
-    width: 600px;
-}
-
-.hytter {
-    background-color: #d82d20;
-    color: white;
-    text-align: center;
-    padding: 5px 0 5px 0;
-    width: 100%;
-    height: 100%;
-}
-
-.hytter:hover {
-    background-color: #a80c1c;
+#mapSection {
+    width: 67%;
+    height: 70%;
+    background-color: bisque;
+    float: left;
 }
 
 #infoSection {
-    height: 25%;
+    clear: both;
+    width: 100%;
+    height: 30%;
+    background-color: blueviolet;
 }
 
-#infohytte1 {
-    width: 34%;
-    /* Gyslige farger er midlertidige*/
-    background-color: green;
+#map {
     height: 100%;
-    float: left;
+    width: 100%;
 }
 
-#infotur {
-    width: 32%;
-    /* Gyslige farger er midlertidige */
-    background-color: brown;
-    height: 100%;
-    float: left;
+.hytter {
+    padding: 10px;
 }
 
-#infohytte2 {
-    width: 34%;
-    /* Gyslige farger er midlertidige */
+.hytter:hover {
     background-color: aqua;
-    height: 100%;
-    float: left;
 }
-.valgt{
-      background-color: #b00e1e;
+
+
+
+
+/* Under her er uorgaisert */
+.select-style {
+    padding: 0;
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 90%;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+
+    background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 90% 50%;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
 }
