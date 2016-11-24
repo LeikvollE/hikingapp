@@ -3,9 +3,9 @@ var hyttediv = document.getElementById("listemedhytter");
 var areaSelect = document.getElementById("areaSelect"); //dropdown for turområde
 var valgteHytter = [];
 
-window.onload=function() {
+window.onload = function () {
     areaSelect.selectedIndex = 0;
-}       
+}
 
 function finnHytter() { //funksjon for å generere liste over hytter
     var sted = areaSelect.options[areaSelect.selectedIndex].value; //henter valgt område
@@ -75,8 +75,8 @@ function hytteInfo(hytteId) {
             if (startSteder[i][2] === valgteHytter[0][5]) {
                 infohytte2.innerHTML = "<center><b>Anbefalt startsted</b></center><center>" + startSteder[i][1] + "</center>";
                 routeControl.setWaypoints([
-              valgteHytter[0][0],
-              startSteder[i][0]
+                    valgteHytter[0][0],
+                    startSteder[i][0]
           ]);
             }
         }
