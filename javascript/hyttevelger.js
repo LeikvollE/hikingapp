@@ -75,7 +75,8 @@ function hytteInfo(hytteId) {
             if (startSteder[i][2] === valgteHytter[0][5]) {
                 infohytte2.innerHTML = "<center><b>Anbefalt startsted</b></center><center>" + startSteder[i][1] + "</center>";
                 routeControl.setWaypoints([
-                    valgteHytter[0][0],
+                    /*valgteHytter[0][0]*/
+                    L.marker([51.941196,4.512291]),
                     startSteder[i][0]
           ]);
             }
