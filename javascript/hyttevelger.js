@@ -3,6 +3,8 @@ var hyttediv = document.getElementById("listemedhytter");
 var areaSelect = document.getElementById("areaSelect"); //dropdown for turområde
 var valgteHytter = [];
 
+var test;
+
 window.onload = function () {
     areaSelect.selectedIndex = 0;
 }
@@ -74,9 +76,10 @@ function hytteInfo(hytteId) {
         for (var i = 0; i < startSteder.length; i++) { //finner startsted for tur til hytte dersom kun 1 hytte er valgt
             if (startSteder[i][2] === valgteHytter[0][5]) {
                 infohytte2.innerHTML = "<center><b>Anbefalt startsted</b></center><center>" + startSteder[i][1] + "</center>";
+                test = L.marker(valgteHytter[0][0], {icon: redMarker}).addTo(map);
                 routeControl.setWaypoints([
                     /*valgteHytter[0][0]*/
-                    L.marker([51.941196,4.512291]),
+                    test,
                     startSteder[i][0]
           ]);
             }

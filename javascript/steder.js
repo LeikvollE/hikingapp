@@ -1,7 +1,7 @@
 //objekter må inneholde: koordinater, sted (bergsdalen), bilde av hytte, beskrivelse av hyttefasiliteter og området rundt.
 //datastruktur på liste over hytter: hytteliste[hytte[karfunksjon(koordinater), område, hyttenavn, bildested, beskrivelse, ID, høydemeter]].
 var hytter = [
-  [L.latLng(60.535, 5.924722), "bergsdalen", "Høgabu", "img/hogabu.jpg", "beskrivelse av hogabu", 0, 900],
+  [[60.535, 5.924722], "bergsdalen", "Høgabu", "img/hogabu.jpg", "beskrivelse av hogabu", 0, 900],
   [L.latLng(60.536944, 6.079167), "bergsdalen", "Alexander Grieghytten", "img/alexgrieg.jpg", "beskrivelse av alexgrieg", 1, 600],
   [L.latLng(60.500833, 5.960278), "bergsdalen", "Gullhorgabu", "img/gullhorgabu.jpg", "beskrivelse av gullhorgabu", 2, 840],
   [L.latLng(60.473889, 6.075278), "bergsdalen", "Vending", "img/vending.jpg", "beskrivelse av vending", 3, 820],
