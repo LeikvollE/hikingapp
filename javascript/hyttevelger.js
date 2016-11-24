@@ -7,6 +7,7 @@ var test;
 
 window.onload = function () {
     areaSelect.selectedIndex = 0;
+    tegnPins();
 }
 
 function finnHytter() { //funksjon for å generere liste over hytter
@@ -76,10 +77,8 @@ function hytteInfo(hytteId) {
         for (var i = 0; i < startSteder.length; i++) { //finner startsted for tur til hytte dersom kun 1 hytte er valgt
             if (startSteder[i][2] === valgteHytter[0][5]) {
                 infohytte2.innerHTML = "<center><b>Anbefalt startsted</b></center><center>" + startSteder[i][1] + "</center>";
-                test = L.marker(valgteHytter[0][0], {icon: redMarker}).addTo(map);
                 routeControl.setWaypoints([
-                    /*valgteHytter[0][0]*/
-                    test,
+                    valgteHytter[0][0],
                     startSteder[i][0]
           ]);
             }

@@ -1,4 +1,24 @@
-var redMarker = L.AwesomeMarkers.icon({
+var redMarker = L.AwesomeMarkers.icon({ //Ikon for kart markøren for hytter
     icon: 'home',
-    markerColor: 'red'
+    prefix: 'fa',
+    markerColor: '#d82d20'
 });
+
+var blueMarker = L.AwesomeMarkers.icon({ //Ikon for kartmakøren til startsteder
+    icon: 'car',
+    prefix: 'fa',
+    markerColor: 'blue'
+});
+
+function tegnPins() { //Blir kalt når siden laster, tegner markørene på kartet.
+    var antHytter = hytter.length;
+    var antStartTeder = startSteder.length;
+    
+    for(var i = 0; i < antStartTeder; i++){
+        L.marker(startSteder[i][0], {icon: blueMarker}).addTo(map); //Setter en markør på kartet der hytte nr. i ligger
+    }
+    
+    for(var i=0; i < antHytter; i++){
+        L.marker(hytter[i][0], {icon: redMarker}).addTo(map); //Setter en markør der startsted i ligger
+    }
+}

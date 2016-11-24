@@ -50,6 +50,7 @@ var routeControl = L.Routing.control({  //Hovedvariabel for rutekontrollen, styr
     formatter: new L.Routing.mapzenFormatter(),
     summaryTemplate: '<div class="start">{name}</div><div class="info {costing}">{distance}, {time}</div>',  //Egentlig unødvendig siden vi ikke lar brukeren ha mulighet til å vise veibeskrivelser
     routeWhileDragging: false,  //Gjør at vi ikke rekalkulerer ruten hver gang brukeren trykker på den
+    createMarker: function() { return null; }
     
 }).addTo(map);
 
