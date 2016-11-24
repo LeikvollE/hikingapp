@@ -21,7 +21,7 @@ body, html {
     width: 33%;
     background-color: #d82d20;
     float: left;
-    overflow-y: scroll;
+    
     color: white;
 }
 
@@ -60,6 +60,13 @@ body, html {
 
 .valgt{
     background-color: #b00e1e;
+    border-style: solid;
+    border-color: white;
+}
+
+#listemedhytter {
+    height: 90%;
+    overflow-y: scroll;
 }
 
 #listemedhytter > p {
