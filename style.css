@@ -1,79 +1,60 @@
-/*
- *
- * Alt av farger er midlertidig
- *
- */
-
 body, html {
     height: 95%;
     font-family: "DTL";
 }
-
 #container {
     height: 100%;
     width: 80%;
     /*background-color: aqua;*/
     margin: auto;
 }
-
 #selectionSection {
     height: 70%;
     width: 33%;
     background-color: #d82d20;
     float: left;
-    
     color: white;
 }
-
 #mapSection {
     width: 67%;
     height: 70%;
     background-color: bisque;
     float: left;
 }
-
 #map {
     height: 100%;
     width: 100%;
 }
-
 .hytter {
     padding: 10px;
     display: inline-block;
     color: white;
 }
-
 .hytter:hover {
     background-color: #a80c1c;
 }
-
 .hytter > img {
     width: 40%;
     float: left;
 }
-
 .hytter > b {
     margin: 3px;
     font-family: "DTL";
     font-size: 1.2vw; /*responsive fontstørrelse*/
 }
-
 .valgt{
     background-color: #b00e1e;
     border-style: solid;
     border-color: white;
 }
-
 #listemedhytter {
     height: 90%;
     overflow-y: scroll;
 }
-
 #listemedhytter > p {
     margin: 10px;
     font-size: 1vw;
 }
-
 #infoSection {
     clear: both;
     width: 100%;
@@ -81,39 +62,24 @@ body, html {
     padding-top: 10px;
     /*background-color: blueviolet;*/
 }
-
 #infohytte1 {
     width: 34%;
-    /* Gyslige farger er midlertidige*/
-    /*background-color: green;*/
     height: 100%;
     float: left;
 }
-
 #infotur {
     width: 32%;
-    /* Gyslige farger er midlertidige */
-    /*background-color: brown;*/
     height: 100%;
     float: left;
 }
-
 #infohytte2 {
     width: 34%;
-    /* Gyslige farger er midlertidige */
-    /*background-color: aqua;*/
     height: 100%;
     float: left;
 }
-
 #infoSection > div {
     font-size: 1.2vw; /*responsive fontstørrelse*/
 }
-
-
-
-
-
 /* Under her er uorgaisert */
 .select-style {
     padding: 0;
@@ -123,10 +89,8 @@ body, html {
     border-radius: 3px;
     overflow: hidden;
     background-color: #fff;
-
     background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 90% 50%;
 }
-
 .select-style select {
     padding: 5px 8px;
     width: 100%;
@@ -139,18 +103,15 @@ body, html {
     -moz-appearance: none;
     appearance: none;
 }
-
 .select-style select:focus {
     outline: none;
 }
-
 @font-face {
     font-family: "DTL";
     src: url('font/DTL.ttf') format("truetype");
     font-weight: normal;
     font-style: normal;
 }
-
 .hide {
     display: none;
 }
