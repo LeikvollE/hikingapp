@@ -116,3 +116,7 @@ body, html {
 .hide {
     display: none;
 }
+
+option {
+    font-family: "DNT";
+}
