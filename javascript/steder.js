@@ -12,8 +12,8 @@ var hytter = [
   [L.latLng(60.473889, 6.075278), "bergsdalen", "Vending", "img/vending.jpg", "Rundt Vending er det et ypperlig turterreng både sommer og vinter. Fuglafjell. Geitafjell og Skrott er flotte dagsturmål fra hytten. Ta med fiskestang, og går du med barn, ligg over en dag og kos dere i området. En av de fineste turene man kan gå i dette området, er fra Hamlagrø, overnatting på Vending og derfra til Botnen.", 3, 820, "Selvbetjent hele året. 30 sengeplasser."],
   [L.latLng(60.514602, 6.201278), "bergsdalen", "Kiellandbu", "img/kiellandbu.jpg", "Kiellandbu ligger flott til på Løkjedalsnuten med imponerende utsikt mot Botnen, Fyksesund og mot Folgefonna på andre siden av Hardangerfjorden. Om sommeren nås hytten fra Hamlagrø, Hodnaberg i Bergsdalen, og fra Botnen i Fyksesund på t-merkede stier.", 4, 913, "Ubetjent hele året. 5 sengeplasser."],
   [L.latLng(60.465862, 6.125688), "bergsdalen", "Breidablik", "img/breidablik.jpg", "Hytteanlegget Breidablik ligger ligger høyt over Fitjadalen i Kvam og er et av landets mest egenartede hytteanlegg med en fantastisk beliggenhet og et stort rundskue. Fra Vending kan man ta dagstur opp til hytten, mens fra Hamlagrøosen er det greit å ta med seg litt god mat og overnatte. Fra Breidablik kan man ta en kveldstur til Skrott. Uansett er dette stedet verdt en overnatting, og topptur til Skrott setter en ekstra spiss på turen.", 5, 1160, "Ubetjent. Stengt fra 19. sep til 1. juli. 10 sengeplasser."],
-    [L.latLng(60.090833, 6.343056), "folgefonna", "Breidablikk", "img/breidablik.jpg", "beskrivelse", 6, 1322, "Ubetjent hele året. 4 sengeplasser. "],
-    [L.latLng(60.076667, 6.347778), "folgefonna", "Fonnabu", "img/breidablik.jpg", "beskrivelse", 7, 1450, "Selvbetjent hele året, 27 sengeplasser"]
+  [L.latLng(60.090833, 6.343056), "folgefonna", "Breidablikk", "img/breidablik.jpg", "beskrivelse", 6, 1322, "Ubetjent hele året. 4 sengeplasser. "],
+  [L.latLng(60.076667, 6.347778), "folgefonna", "Fonnabu", "img/breidablik.jpg", "beskrivelse", 7, 1450, "Selvbetjent hele året, 27 sengeplasser"]
 ];
 
 //struktur på startsteder: startSteder[startsted[kartfunksjon(koordinater), beskrivelse, ID]]
