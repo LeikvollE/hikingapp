@@ -6,7 +6,7 @@ var hytter = [
   [L.latLng(60.473889, 6.075278), "bergsdalen", "Vending", "img/vending.jpg", "beskrivelse av vending", 3, 820],
   [L.latLng(60.514602, 6.201278), "bergsdalen", "Kiellandbu", "img/kiellandbu.jpg", "beskrivelse", 4, 913],
   [L.latLng(60.465862, 6.125688), "bergsdalen", "Breidablik", "img/breidablik.jpg", "beskrivelse", 5, 1322]*/
-  [L.latLng(60.535, 5.924722), "bergsdalen", "Høgabu", "img/hogabu.jpg", "beskrivelse av hogabu", 0, 900, "Selvbetjent hele året. 26 senger."],
+  [L.latLng(60.535, 5.924722), "bergsdalen", "Høgabu", "img/hogabu.jpg", "Høgabu er en av turlagets eldste hytter. Den ligger fint til i siden over Tjøranadalsvatnet, med flott utsyn mot Trollaskardet mot sørøst og Bukkafjellet bak. Kneisende opp ved hytten, ligger Bergsbukken. I Tjørnadalsvatnet kan man få fisk av varierende størrelse, iblant kan den være av bra størrelse.", 0, 900, "Selvbetjent hele året. 26 senger."],
   [L.latLng(60.536944, 6.079167), "bergsdalen", "Alexander Grieghytten", "img/alexgrieg.jpg", "beskrivelse av alexgrieg", 1, 600, "Ubetjent hele året. Må låne nøkkel. 34 sengeplasser."],
   [L.latLng(60.500833, 5.960278), "bergsdalen", "Gullhorgabu", "img/gullhorgabu.jpg", "beskrivelse av gullhorgabu", 2, 840, "Selvbetjent hele året. 34 sengeplasser."],
   [L.latLng(60.473889, 6.075278), "bergsdalen", "Vending", "img/vending.jpg", "beskrivelse av vending", 3, 820, "Selvbetjent hele året. 30 sengeplasser."],
