@@ -13,7 +13,7 @@ var hytter = [
   [L.latLng(60.514602, 6.201278), "bergsdalen", "Kiellandbu", "img/kiellandbu.jpg", "beskrivelse", 4, 913, "Ubetjent hele året. 5 sengeplasser."],
   [L.latLng(60.465862, 6.125688), "bergsdalen", "Breidablik", "img/breidablik.jpg", "beskrivelse", 5, 1160, "Ubetjent. Stengt fra 19. sep til 1. juli. 10 sengeplasser."],
     [L.latLng(60.090833, 6.343056), "folgefonna", "Breidablikk", "img/breidablik.jpg", "beskrivelse", 6, 1322, "Ubetjent hele året. 4 sengeplasser. "],
-    [L.latLng(60.076667, 6.3477780), "folgefonna", "Fonnabu", "img/breidablik.jpg", "beskrivelse", 7, 1450, "Selvbetjent hele året, 27 sengeplasser")]
+    [L.latLng(60.076667, 6.347778), "folgefonna", "Fonnabu", "img/breidablik.jpg", "beskrivelse", 7, 1450, "Selvbetjent hele året, 27 sengeplasser"]
 ];
 
 //struktur på startsteder: startSteder[startsted[kartfunksjon(koordinater), beskrivelse, ID]]
