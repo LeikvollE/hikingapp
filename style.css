@@ -37,12 +37,19 @@ body, html {
 .hytter > img {
     width: 40%;
     float: left;
+    margin-right: 1%;
 }
 .hytter > b {
-    margin: 3px;
     font-family: "DTL";
     /*font-size: 1.2vw; responsive fontstørrelse*/
 }
+
+.hytter > p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1vw;
+}
+
 .valgt{
     background-color: #b00e1e;
     border-style: solid;
