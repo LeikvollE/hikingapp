@@ -22,7 +22,7 @@ function finnHytter() { //funksjon for å generere liste over hytter
     skrivUtHytter(hytteliste);
 }
 
-//Midlertidig funksjon for å skrive ut hytter på siden
+//Skriver ut liste over hytter i valgt område
 function skrivUtHytter(liste) {
     hyttediv.innerHTML = ""; //tømmer innhold i hyttediv
 
@@ -37,11 +37,11 @@ function hytteInfo(hytteId) {
     var infohytte2 = document.getElementById("infohytte2");
     var hytteElement = document.getElementById("hytte" + hytteId);
 
-    for (var i = 0; i < hytter.length; i++) { //skriver ut i infoboksen. kun hytte 1 foreløpig.
+    for (var i = 0; i < hytter.length; i++) { //skriver ut i infoboksen
         if (hytter[i][5] === hytteId) {
             if (erValgt(hytter[i])) { //sjekker om hytte[i] er valgt fra før. fjerner i det tilfellet klassen "valgt" for å endre utseendet.
                 hytteElement.className = hytteElement.className.replace(/\bvalgt\b/, '');
-                if (hytter[i][5] === valgteHytter[0][5]) { //
+                if (hytter[i][5] === valgteHytter[0][5]) { //fjerner elementet i valgteHytter som er lik hytter[i]
                     valgteHytter.splice(0, 1);
                 } else {
                     valgteHytter.splice(1, 1);
@@ -52,6 +52,7 @@ function hytteInfo(hytteId) {
             }
 
             if (valgteHytter.length === 2) { //dersom 2 hytter er valgt fra før, fjernes den siste fra arrayet. ellers blir den nye hytta lagt til i arrayet
+                //fjerner class "valgt" når man trykker på samme hytte igjen.
                 document.getElementById("hytte" + valgteHytter[0][5]).className = document.getElementById("hytte" + valgteHytter[0][5]).className.replace(/\bvalgt\b/, '');
                 valgteHytter[0] = valgteHytter[1];
                 valgteHytter.pop();
@@ -63,9 +64,10 @@ function hytteInfo(hytteId) {
         }
     }
 
-    infohytte1.innerHTML = "<center><b>" + valgteHytter[0][2] + "</b></center>" + "<center>" + valgteHytter[0][4] + "</center>"; //legger til info i infoboksen
+    //legger til info i infoboksen
+    infohytte1.innerHTML = "<center><b>" + valgteHytter[0][2] + "</b></center><center>" + valgteHytter[0][7] + "</center><center>" + valgteHytter[0][4] + "</center>";
     if (valgteHytter.length === 2) { //dersom 2 hytter er valgt blir info om begge lagt til i infoboksen.
-        infohytte2.innerHTML = "<center><b>" + valgteHytter[1][2] + "</b></center>" + "<center>" + valgteHytter[1][4] + "</center>";
+        infohytte2.innerHTML = "<center><b>" + valgteHytter[1][2] + "</b></center>" + "<center>" + valgteHytter[1][7] + "</center><center>" + valgteHytter[1][4] + "</center>";
     }
 
     if (valgteHytter.length === 2) { //tegner inn rute på kart dersom 2 hytter er valgt
@@ -76,6 +78,7 @@ function hytteInfo(hytteId) {
     } else {
         for (var i = 0; i < startSteder.length; i++) { //finner startsted for tur til hytte dersom kun 1 hytte er valgt
             if (startSteder[i][2] === valgteHytter[0][5]) {
+                //skriver ut informasjon om startstedet
                 infohytte2.innerHTML = "<center><b>Anbefalt startsted</b></center><center>" + startSteder[i][1] + "</center>";
                 routeControl.setWaypoints([
                     valgteHytter[0][0],
