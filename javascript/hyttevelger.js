@@ -71,9 +71,9 @@ function hytteInfo(hytteId) {
     }
 
     //legger til info i infoboksen
-    infohytte1.innerHTML = "<center><b>" + valgteHytter[0][2] + "</b></center>" + valgteHytter[0][4] + "";
+    infohytte1.innerHTML = "<center><b>" + valgteHytter[0][2] + "</b></center>" + valgteHytter[0][4] + "<center><div class='fasiliteter'>" + valgteHytter[0][8] + "</div></center>";
     if (valgteHytter.length === 2) { //dersom 2 hytter er valgt blir info om begge lagt til i infoboksen.
-        infohytte2.innerHTML = "<center><b>" + valgteHytter[1][2] + "</b></center>" + valgteHytter[1][4] + "";
+        infohytte2.innerHTML = "<center><b>" + valgteHytter[1][2] + "</b></center>" + valgteHytter[1][4] + "<center><div class='fasiliteter'>" + valgteHytter[1][8] + "</div></center>";
     }
 
     if (valgteHytter.length === 2) { //tegner inn rute på kart dersom 2 hytter er valgt

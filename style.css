@@ -87,6 +87,13 @@ body, html {
 #infoSection > div {
     /*font-size: 1.2vw; responsive fontstørrelse*/
 }
+
+.fasiliteter {
+    width: 100%;
+    background-color: #d82d20;
+    color: white;
+    margin-bottom: 10px;
+}
 /* Under her er uorgaisert */
 .select-style {
     padding: 0;
