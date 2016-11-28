@@ -56,7 +56,10 @@ function hytteInfo(hytteId) {
 
             if (valgteHytter.length === 2) { //dersom 2 hytter er valgt fra før, fjernes den siste fra arrayet. ellers blir den nye hytta lagt til i arrayet
                 //fjerner class "valgt" når man trykker på samme hytte igjen.
+                try{
                 document.getElementById("hytte" + valgteHytter[0][5]).className = document.getElementById("hytte" + valgteHytter[0][5]).className.replace(/\bvalgt\b/, '');
+              }
+              catch(err) {}
                 valgteHytter[0] = valgteHytter[1];
                 valgteHytter.pop();
                 valgteHytter.push(hytter[i])
