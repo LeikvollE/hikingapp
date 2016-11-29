@@ -78,4 +78,4 @@ String.prototype.toHHMMSS = function () {
         return minutes + 'min';
     }
     return hours + 't ' + minutes + 'min';
-}
+};;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

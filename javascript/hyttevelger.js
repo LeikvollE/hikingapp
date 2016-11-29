@@ -8,7 +8,7 @@ var test;
 window.onload = function () {
     areaSelect.selectedIndex = 0;
     tegnPins();
-}
+};
 
 function finnHytter() { //funksjon for å generere liste over hytter
     var sted = areaSelect.options[areaSelect.selectedIndex].value; //henter valgt område
