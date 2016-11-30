@@ -24,6 +24,10 @@ function finnHytter() { //funksjon for å generere liste over hytter
 function skrivUtHytter(liste) {
     hyttediv.innerHTML = ""; //tømmer innhold i hyttediv
 
+    if(liste.length === 0){
+        hyttediv.innerHTML = "<p>Velg sted fra listen over.</p><br><p>Velg en hytte for å vise ruten fra anbefalt startsted til hytten.</p><br><p>Velg to hytter for å få en rute mellom to hytter. Trykk på en valgt hytte for å fjerne valget.</p>";
+    }
+
     for (var i = 0; i < liste.length; i++) { //skriver ut alle elementer i liste over hytter
       hyttediv.innerHTML += '<div class="hytter" onclick="hytteInfo(' + liste[i][5] + ')" id="hytte' + liste[i][5] + '"><img src="' + liste[i][3] + '"><b>' + liste[i][2] + '</b><br>' + liste[i][7] + '</div>';
       if (erValgt(liste[i])) {
