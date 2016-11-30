@@ -24,15 +24,15 @@ function finnHytter() { //funksjon for å generere liste over hytter
 function skrivUtHytter(liste) {
     hyttediv.innerHTML = ""; //tømmer innhold i hyttediv
 
-    if(liste.length === 0){
+    if (liste.length === 0) {
         hyttediv.innerHTML = "<p>Velg sted fra listen over.</p><br><p>Velg en hytte for å vise ruten fra anbefalt startsted til hytten.</p><br><p>Velg to hytter for å få en rute mellom to hytter. Trykk på en valgt hytte for å fjerne valget.</p>";
     }
 
     for (var i = 0; i < liste.length; i++) { //skriver ut alle elementer i liste over hytter
-      hyttediv.innerHTML += '<div class="hytter" onclick="hytteInfo(' + liste[i][5] + ')" id="hytte' + liste[i][5] + '"><img src="' + liste[i][3] + '"><b>' + liste[i][2] + '</b><br>' + liste[i][7] + '</div>';
-      if (erValgt(liste[i])) {
-        document.getElementById("hytte" + liste[i][5]).className += " valgt"; //legger til klassen "valgt" på hytter som er valgt for å endre utseendet.
-      }
+        hyttediv.innerHTML += '<div class="hytter" onclick="hytteInfo(' + liste[i][5] + ')" id="hytte' + liste[i][5] + '"><img src="' + liste[i][3] + '"><b>' + liste[i][2] + '</b><br>' + liste[i][7] + '</div>';
+        if (erValgt(liste[i])) {
+            document.getElementById("hytte" + liste[i][5]).className += " valgt"; //legger til klassen "valgt" på hytter som er valgt for å endre utseendet.
+        }
     }
 }
 
@@ -48,8 +48,15 @@ function hytteInfo(hytteId) {
                 hytteElement.className = hytteElement.className.replace(/\bvalgt\b/, '');
                 if (hytter[i][5] === valgteHytter[0][5]) { //fjerner elementet i valgteHytter som er lik hytter[i]
                     valgteHytter.splice(0, 1);
+                    infohytte1.innerHTML = "";
+                    if(valgteHytter.length === 0){
+                        infohytte2.innerHTML = "";
+                        document.getElementById("infotur").innerHTML = "";
+                        map.setView([60.535, 5.924722], 10);
+                    }
                 } else {
                     valgteHytter.splice(1, 1);
+                    infohytte2.innerHTML = "";
                 }
                 break;
             } else {
@@ -58,10 +65,11 @@ function hytteInfo(hytteId) {
 
             if (valgteHytter.length === 2) { //dersom 2 hytter er valgt fra før, fjernes den siste fra arrayet. ellers blir den nye hytta lagt til i arrayet
                 //fjerner class "valgt" når man trykker på samme hytte igjen.
-                try{
-                document.getElementById("hytte" + valgteHytter[0][5]).className = document.getElementById("hytte" + valgteHytter[0][5]).className.replace(/\bvalgt\b/, '');
-              }
-              catch(err) {}
+                try {
+                    document.getElementById("hytte" + valgteHytter[0][5]).className = document.getElementById("hytte" + valgteHytter[0][5]).className.replace(/\bvalgt\b/, '');
+                }
+                catch (err) {
+                }
                 valgteHytter[0] = valgteHytter[1];
                 valgteHytter.pop();
                 valgteHytter.push(hytter[i])
@@ -92,7 +100,7 @@ function hytteInfo(hytteId) {
                 routeControl.setWaypoints([
                     valgteHytter[0][0],
                     startSteder[i][0]
-          ]);
+                ]);
             }
         }
     }
