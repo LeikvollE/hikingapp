@@ -3,8 +3,6 @@ var hyttediv = document.getElementById("listemedhytter");
 var areaSelect = document.getElementById("areaSelect"); //dropdown for turområde
 var valgteHytter = [];
 
-var test;
-
 window.onload = function () {
     areaSelect.selectedIndex = 0;
     tegnPins();
