@@ -25,7 +25,7 @@ function skrivUtHytter(liste) {
     hyttediv.innerHTML = ""; //tømmer innhold i hyttediv
 
     if (liste.length === 0) {
-        hyttediv.innerHTML = "<p>Velg sted fra listen over.</p><br><p>Velg en hytte for å vise ruten fra anbefalt startsted til hytten.</p><br><p>Velg to hytter for å få en rute mellom to hytter. Trykk på en valgt hytte for å fjerne valget.</p>";
+        hyttediv.innerHTML = "<p>Velg sted fra listen over.</p><br><p>Velg en hytte for å vise ruten fra anbefalt startsted til hytten.</p><br><p>Velg to hytter for å få en rute mellom to hytter. Trykk på en valgt hytte for å fjerne valget.</p><br><p>Trykk på en markør på kartet for å se navnet på hytten.</p>";
     }
 
     for (var i = 0; i < liste.length; i++) { //skriver ut alle elementer i liste over hytter
